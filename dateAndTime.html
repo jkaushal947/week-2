@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--meta http-equiv="refresh" content="5" /-->
+    </head>
+<body>
+    <p id="theCurrentTime"></p>
+    
+    <script>
+        var myNewDate = new Date();
+        
+        var theDay = myNewDate.getDay();
+        //0=sun, 1=mon
+        var theActualDay=" ";
+        
+        switch(theDay){
+            case 0:
+                theActualDay="Sunday";
+                break;
+            case 1:
+                theActualDay="Monday";
+                break;
+            case 2:
+                theActualDay="Tuesday";
+                break;
+            case 3:
+                theActualDay="Wednesday";
+                break;
+            case 4:
+                theActualDay="Thursday";
+                break;    
+            case 5:
+                theActualDay="Friday";
+                break;
+            case 6:
+                theActualDay="Saturday";
+                break;
+            default:"This is not considered to be a valid day.";
+                break;
+                
+        }
+        console.log(theActualDay);
+        
+         
+        var theHours = myNewDate.getHours();
+        //console.log(theHours);
+        
+        var theMins = myNewDate.getMinutes();
+        //console.log(theMins);
+        
+        var theSec = myNewDate.getSeconds();
+        
+        var currentTime = theHours+":"+theMins+":"+theSec;
+        //console.log(currentTime);
+    
+        document.getElementById('theCurrentTime').innerHTML = currentTime;
+    </script>
+</body>
+</html>

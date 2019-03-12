@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+<body>
+<p class="persondetails"></p>
+<p class="persondetails"></p>
+<p class="persondetails"></p>
+    
+    
+    <script>
+        //This is an array
+       /* var Fruit=["apple","orange","pear"];
+        
+        console.log(Fruit);*/
+        
+        
+        //This is an array of objects
+        var Person=[
+          {  
+            name:"John Smith",
+        age:25,
+        maritalStatus:false,
+        Line1OfAddress:"21 WelbeckMansions",
+        Line2OfAddress:"Little Avenue",
+        County:"Herefordshire",
+        Postcode:"H21 543",
+        Country:"United Kingdom"
+          },
+            {
+                name:"Sarah Brown",
+                age:34,
+                maritalStatus:true,
+        Line1OfAddress:"8 Fenwick Road",
+        Line2OfAddress:"Brampton",
+        County:"Nottingham",
+        Postcode:"NG11 345",
+        Country:"United Kingdom"
+            },
+            {
+                name:"Michael Singh",
+                age:21,
+                maritalStatus:false,
+        Line1OfAddress:"34 Smithfield Ave",
+        Line2OfAddress:"Westgate",
+        County:"Bournemouth",
+        Postcode:"BH2 7YH",
+        Country:"United Kingdom"
+            }
+        ];
+        
+        console.log(Person);
+        
+        for(var i=0; i < Person.length; i++)
+        {
+            document.getElementsByClassName('persondetails')[i].innerHTML = Person[i].name+"<br/>"+Person[i].age+"<br />"+Person[i].maritalStatus+"<br />"+Person[i].Line1OfAddress+"<br />"+Person[i].Line2OfAddress+"<br />"+Person[i].County+"<br />"+Person[i].Postcode+"<br />"+Person[i].Country+"<br />";
+        }
+    </script>
+</body>
+</html>

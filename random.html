@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <button onclick="CreateRandomNumber()">Create a New Random Number</button>
+    <script>
+        var newRandomNumber=0;
+        function CreateRandomNumber(){
+            for(var i = 1; i <= 6; i++){
+        newRandomNumber = Math.floor((Math.random() * 100) + 0);
+                switch(true){
+                    case (newRandomNumber >= 0 && newRandomNumber <= 39):
+                        document.write("<br />Failed with a grade of "+newRandomNumber);
+                        break;
+                    case (newRandomNumber >= 40 && newRandomNumber <= 59):
+                        document.write("<br />Passed with a grade of "+newRandomNumber);
+                        break;
+                    case (newRandomNumber >= 60 && newRandomNumber <= 79):
+                        document.write("<br />Merit with a grade of "+newRandomNumber);
+                        break;
+                    case (newRandomNumber >= 80 && newRandomNumber <= 100):
+                        document.write("<br />Distinction with a grade of "+newRandomNumber);
+                        break;
+                    default:document.write("<br />unknown grade of "+newRandomNumber);
+                }
+        console.log(newRandomNumber);
+            }
+            
+        }
+    </script>
+</body>
+</html>

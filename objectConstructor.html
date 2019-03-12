@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="jimmysdog"></p>
+        <p id="geoffreysdog"></p>
+    <script>
+        //set up a constructor for the object dog
+        function Dog(name, breed, age, height){
+            this.dogname = name;
+            this.dogbreed = breed;
+            this.dogage = age;
+            this.dogheight = height;
+        }
+        //create a new dog for Geoffrey
+        var geoffreysDog = new Dog("Lassie","German Shepherd",2, 1.3);
+        //create a new dog for Jimmy
+        var JimmysDog = new Dog("Rover","Husky",3, 2.1);
+        
+        
+        //access the fields in the object and print them to the <p>
+        document.getElementById('jimmysdog').innerHTML = JimmysDog.dogname+"<br />"+JimmysDog.dogbreed+"<br />"+JimmysDog.dogage+"<br />"+JimmysDog.dogheight+"<br />";
+        
+        //access the fields in the object and print them to the <p>
+        document.getElementById('geoffreysdog').innerHTML = geoffreysDog.dogname+"<br />"+geoffreysDog.dogbreed+"<br />"+geoffreysDog.dogage+"<br />"+geoffreysDog.dogheight+"<br />";
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+   <button onclick="AddNewElement()">Add New Element</button>
+   <ul id="numbers">
+<input type="text" id="newItem" />
+       <li>one</li>
+   </ul>
+    <script>
+        function AddNewElement(){
+            //Create a new <li> element, and store in newElement
+            var newElement = document.createElement("LI");
+            /*create a new textnode element and store in someText
+              but get the text from the newItem id
+            */
+            var someText = document.createTextNode(document.getElementById('newItem').value);
+            //add the text to the list element
+            newElement.appendChild(someText);
+            //add the list element to the unordered list
+            document.getElementById('numbers').appendChild(newElement);
+        }
+    </script>
+</body>
+</html>
