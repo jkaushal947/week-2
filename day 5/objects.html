@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>List of Marvel Heroes</title>
+</head>
+
+<body>
+    <h2>Marvel Heroes</h2>
+    <input type="text" id="newItem" /><br /> <br />
+    <button onclick="AddNewHero()">Add New Hero</button>
+    <ul id="heroes">
+        <li>Iron Man</li>
+        <li>Spiderman</li>
+        <li>Thor</li>
+        <li>Black Panther</li>
+        <li>Hulk</li>
+        <li>Doctor Strange</li>
+        <li>Falcon</li>
+        <li>Captain Marvel</li>
+        <li>Ant-Man</li>
+        <li>Wasp</li>
+    </ul>
+    <script>
+        function AddNewHero() {
+
+            var newElement = document.createElement("LI");
+            var someText = document.createTextNode(document.getElementById('newItem').value);
+            newElement.appendChild(someText);
+            document.getElementById('heroes').appendChild(newElement);
+        }
+
+    </script>
+</body>
+
+</html>

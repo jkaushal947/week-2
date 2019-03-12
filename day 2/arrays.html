@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <p id="someId" onmouseout="functionMouse(0)" onmouseover="functionMouse(1)" onclick="functionMouse(2)">mouse event</p>
+    <script>
+        function functionMouse(someParam) {
+            console.log(someParam);
+            if (someParam === 0) {
+                /*mouseout*/
+                document.getElementById('someId').style.color = "blue";
+            }
+            else if(someParam === 1){
+                document.getElementById('someId').style.color = "green";
+            }
+            else
+                {
+                    document.getElementById('someId').style.color = "red";
+                }
+        }
+
+    </script>
+</body>
+
+</html>

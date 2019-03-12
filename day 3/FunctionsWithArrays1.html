@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <input type="number" id="grade" />
+    <button onclick="setgrade()">Check Grade</button>
+    <script>
+        function setgrade() {
+            var thegrade = document.getElementById('grade').value;
+            switch (Number(thegrade)) {
+                case 0 to 39:
+                    alert("Fail");
+                    break;
+                case 40 to 59:
+                    alert("Pass");
+                    break;
+                case 60 to 79:
+                    alert("Merit");
+                    break;
+                case 80 to 100:
+                    alert("Distinction");
+                    break;
+                default:
+                    alert("Error! Invalid grade");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

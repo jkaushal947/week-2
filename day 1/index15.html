@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body onload="displayValues()">
+<p id="p1"></p>
+    <input type="text" id="mytext" /><br /><br />
+    <button onclick="displayValues()">Display Value</button><br /><br />
+    <button onclick="resetValue()">Reset</button>
+    <script>
+        
+        function displayValues(){
+            var textContents = document.getElementById('mytext').value;
+            document.getElementById('p1').innerHTML = textContents;
+        }
+        function resetValue(){
+            document.getElementById('p1').innerHTML = " ";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<?xml version ="1.0" encoding="UTF-8" ?>
+<bookdetails>
+<book>
+   <title>Far From the madding crows</title>
+   <author>Thomas Hardy</author>
+   <publicationDate>1901</publicationDate>
+   <genre>Romantic fiction</genre>
+   <isbn>10001</isbn>
+</book>
+<book>
+   <title>Little Dorrit</title>
+   <author>Charles Dickens</author>
+   <publicationDate>1880</publicationDate>
+   <genre>Victorian fiction</genre>
+   <isbn>10002</isbn>
+</book>
+<book>
+   <title>Julius Caesar</title>
+   <author>William Shakespeare</author>
+   <publicationDate>1610</publicationDate>
+   <genre>Ancient fiction</genre>
+   <isbn>10003</isbn>
+</book>
+</bookdetails>

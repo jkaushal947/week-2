@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p id="result"></p>
+    <button onclick="getResult()">Check Salaries</button>
+
+    <script>
+        var salaries = [24, 13, 10, 16, 4, 19];
+
+        /*Jimmy checks salaries and returns true OR false depending on whether the salary is less than 30*/
+
+        function checkSalaries(sal) {
+            return sal < 30;
+        }
+        /*Elif calls Jimmy*/
+        function getResult() {
+            document.getElementById('result').innerHTML = salaries.every(checkSalaries);
+
+            console.log(salaries.every(checkSalaries));
+        }
+
+    </script>
+</body>
+
+</html>

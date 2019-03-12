@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <p>Enter a number to see if it's either less or greater than 10</p>
+
+    <input type = "number" id="number" />
+
+    <button onclick="myFunction()">Calculate</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var number, result;
+            result = document.getElementById("number").value;
+            if (result < 10) {
+                document.getElementById("demo").innerHTML = result+ " is less than 10";
+            } else if (result > 10) {
+                document.getElementById("demo").innerHTML = result+ " is greater than 10";
+            }
+        }
+    </script>
+
+</body>
+</html>

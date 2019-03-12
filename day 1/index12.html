@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <p id="demo" onclick="myfunc()">Nothing here to see</p>
+    <button onclick="count()">Start counting</button>
+
+    <p class="class1"></p>
+
+    <!--1. get element by tag name
+            2. get element by class name
+            3. get element by id-->
+
+    <script>
+        function count() {
+            for (var i = 0; i < 10; i++) {
+                var remainder = i % 2;
+                if (remainder === 0) {
+                    console.log("EVEN NUMBER");
+                } else {
+                    console.log("ODD NUMBER");
+                }
+            }
+        }
+
+
+        /* function myfunc() {
+
+             var cars = ["Saab",
+                 "Volvo",
+                 "BMW",
+                 "Ford",
+                 "Mercedes",
+                 "Ferrari",
+                 "Toyota",
+                 "Hyundai"
+             ];
+
+             console.log(cars[0] + ", " + cars[1] + ", " + cars[2]);
+         }*/
+    </script>
+</body>
+
+</html>

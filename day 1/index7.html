@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input type="number" class="numID"/>
+    <input type="number" class="numID"/><br />
+
+    <button onclick="Add(document.getElementsByClassName('numID')[0].value, document.getElementsByClassName('numID')[1].value)">Add</button>
+    <script>
+        function Add(x, y) {
+            console.log(x + ", " + y);
+
+            var total = Number(x) + Number(y);
+            var result = x + " added to " + y + " = " + total;
+            window.alert(result);
+        }
+
+    </script>
+</body>
+
+</html>

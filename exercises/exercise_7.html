@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h3>Enter a number to display numbers less and greater than the input</h3>
+
+    <input type="number" id="randomnumber">
+    <br>
+    <br>
+    <button onclick="compare()">Compare</button>
+    <br>
+    <br>
+    <p id="answer1"></p>
+    <p id="answer2"></p>
+    <script>
+        function compare() {
+            var randomnumber = Number(document.getElementById("randomnumber").value);
+            var randomnumber1 = randomnumber - 1;
+            var randomnumber2 = randomnumber + 1;
+            var randomnumber = document.getElementById("randomnumber").value;
+            document.getElementById("answer1").innerHTML = " The number less than "  +randomnumber+ " is "  +randomnumber1;
+            document.getElementById("answer2").innerHTML = " The number greater than "  +randomnumber+ " is "  +randomnumber2;
+        }
+    </script>
+
+</body>
+
+</html>

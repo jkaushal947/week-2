@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <button onclick="sort()">Sort Array</button>
+    <script>
+        function swap(theArray, theIndex) {
+            var temp = 0;
+            temp = theArray[theIndex];
+            theArray[theIndex] = theArray[theIndex + 1];
+            theArray[theIndex + 1] = temp;
+            //console.log("The follwoing items were swapped: "+a+" and "+b);
+        }
+
+        function sort() {
+
+            var array = ["Zaphod", "Karen", "Oda nobunaga", "Charles"];
+
+            var bSorted = false;
+            while (bSorted === false) {
+                bSorted = true;
+                for (var i = 0; i < (array.length - 1); i++) {
+                    if (array[i] > array[i + 1]) {
+                        swap(array, i);
+                        bSorted = false;
+                    }
+                }
+            }
+            for (var i = 0; i < array.length; i++) {
+                console.log(array[i] + ", ");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

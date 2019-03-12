@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    First Number <input type="number" id="num1">
+    <br>
+    <br>
+    Second Number <input type="number" id="num2">
+    <br>
+    <br>
+    <button onclick="compare()">Calculate</button>
+    <br>
+    <br>
+    <p id="answer"></p>
+    <script>
+        function compare() {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+
+            if (num1 > num2) {
+                document.getElementById("answer").innerHTML = num1 + " is different to "+ num2;
+            } else if (num2 > num1) {
+                document.getElementById("answer").innerHTML = num2 + " is different to "+ num1;
+            }
+            else {
+                document.getElementById("answer").innerHTML = "The numbers are the same";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

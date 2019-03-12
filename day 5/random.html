@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="CreateRandomNumber()">Create a New Random Number</button>
+    <script>
+        var newRandomnumber=0;
+
+        function CreateRandomNumber() {
+            for (var i = 1; i < 6; i++) {
+                var newRandomNumber = Math.floor((Math.random() * 49) + 1);
+                console.log(newRandomNumber);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

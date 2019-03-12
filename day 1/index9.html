@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <p id="p1">I am some text</p>
+    <p id="p3" onmouseover="mouseEventsHover()" onmouseout="mouseEventsOut()">I will change when hovered over</p>
+
+    <p id="p2" onclick="mouseEventsClick()">Click Me</p>
+    <script>
+        function mouseEventsClick() {
+            document.getElementById('p1').innerHTML = "Hello World!";
+            document.getElementById('p1').style.color = "blue";
+        }
+
+        function mouseEventsHover() {
+            document.getElementById('p3').innerHTML = "I have changed";
+            document.getElementById('p3').style.fontSize = "1.5em";
+        }
+
+        function mouseEventsOut() {
+            document.getElementById('p3').innerHTML ="I have changed back"
+            document.getElementById('p3').style.fontSize = "0.6em";
+        }
+    </script>
+</body>
+
+</html>

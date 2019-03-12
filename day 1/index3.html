@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <p id="number">5</p>
+    <button onclick="Square()">Square</button>
+    <script>
+        function Square() {
+            var num = document.getElementById('number').innerHTML;
+            var mySquare = Number(num) * Number(num);
+            var result = "The square of " + num + " is " + mySquare;
+            window.alert(result);
+        }
+
+    </script>
+</body>
+
+</html>
